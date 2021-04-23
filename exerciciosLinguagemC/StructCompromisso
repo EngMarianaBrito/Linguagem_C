@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+
+/* Escreva um trecho de código para criar as estruturas conforme solicitado abaixo:
+a. Horário: composto de hora, minutos e segundos.
+b. Compromisso: composto de uma data, horário e texto que descreve o compromisso*/
+
+typedef struct{
+  float hora, minutos, segundos;
+} horario;
+
+typedef struct{
+  float data;
+  char textoCompromisso[30];
+} compromisso;
+
+int main(void) {
+  compromisso descrevendo;
+  horario descricao;
+
+  printf("Informe o que se pede abaixo\n");
+  printf("\nHora:" );
+  scanf("%f",&descricao.hora);
+  printf("\nMinutos : ");
+  scanf("%f",&descricao.minutos);
+  printf("\nSegundos : ");
+  scanf("%f",&descricao.segundos);
+  printf("\nData:" );
+  scanf("%f",&descrevendo.data);
+  printf("\nDescrição Compromisso : ");
+  scanf("%s",descrevendo.textoCompromisso);
+
+  printf("Compromisso MARCADO!");
+
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/*Faça um programa para ler a nota da prova de 15 alunos e armazene num vetor, calcule e imprima a media geral.*/
+
+int main(void) {
+  int aluno[15];
+  int media;
+
+  printf("INFORME SUA NOTA\n");
+
+  for (int i=1; i<=15; i++){
+    printf("Aluno %i : ",i);
+    scanf("%d",&aluno[i]);
+  }
+  for (int j=1; j<=15; j++){
+    media += aluno[j];
+  }
+  printf("MEDIA GERAL  = %d",media/15);
+
+}

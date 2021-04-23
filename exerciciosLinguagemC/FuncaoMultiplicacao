@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/*Escreva uma função que receba um vetor V com 10 inteiros armazenados. A função deve percorrer cada
+posição do vetor e multiplicar por 2. Os valores devem ser acessíveis fora do método*/
+
+void multiplicacao(int *vetor){
+  for (int i=1; i<=10; i++){
+    vetor[i] = vetor[i] * 2;
+  }
+}
+
+int main(void) {
+  int vetor[10];
+
+  printf("Informe os valores e veja a mágica!\n");
+  for (int i=1; i<=10; i++){
+    scanf("%d",&vetor[i]);
+  }
+  multiplicacao(vetor);
+  printf("\n===========================\n");
+  printf("MÁGICA!\n");
+  for (int i=1; i<=10; i++){
+    printf("%d\n",vetor[i]);
+  }
+}

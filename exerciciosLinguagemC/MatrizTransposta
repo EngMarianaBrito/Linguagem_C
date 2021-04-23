@@ -1,0 +1,30 @@
+#include <stdio.h>
+/* Leia uma matriz de 3 x 3 elementos. Calcule e imprima a sua transposta.*/
+
+int main(void) {
+  int matriz[3][3];
+
+  /*Lendo os valores das matrizes*/
+  printf("Informe os valores:\n");
+  for (int i=1; i<=3; i++){
+    for (int j=1; j<=3; j++){
+      printf("> ");
+      scanf("%d",&matriz[i][j]);
+    }
+  }
+  /*Mostrando a Matriz original*/
+  printf("Matriz Original\n");
+  for (int i=1; i<=3; i++){
+    for (int j=1; j<=3; j++){
+      printf("%d",matriz[j][i]);
+    }
+  }
+  printf("\n");
+  /*Mostrando a matriz transposta*/
+  printf("Matriz Transposta\n");
+  for (int j=1; j<=3; j++){
+    for (int i=1; i<=3; i++){
+      printf("%d",matriz[j][i]);
+    }
+  }
+}
